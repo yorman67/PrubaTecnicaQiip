@@ -39,6 +39,7 @@ dependencies {
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-rest', version: "$rootProject.ext.serenityVersion"
     implementation 'io.appium:java-client:7.5.1'
 
+    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.assertj:assertj-core:3.20.2'
     testImplementation 'org.slf4j:slf4j-simple:1.7.32'
