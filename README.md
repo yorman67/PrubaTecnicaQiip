@@ -70,8 +70,8 @@ Como pre-requisitos deberás tener instalados las siguientes herramientas:
     Estas pruebas se realizaron en dos dispositvos diferentes uno fisico y uno virtual
     
     El dispositivo fisico utlizado fue un MotoG30 y arrojo las siguientes evidencias
-    ![image](https://user-images.githubusercontent.com/79065617/133642187-6edfe2bd-a7ff-4d8c-9a32-52ee350c5f4a.png)
-    ![image](https://user-images.githubusercontent.com/79065617/133642267-225a5184-3b7d-4dfb-93d9-ec60021be6f5.png)
+   ![image](https://user-images.githubusercontent.com/79065617/133642187-6edfe2bd-a7ff-4d8c-9a32-52ee350c5f4a.png)
+   ![image](https://user-images.githubusercontent.com/79065617/133642267-225a5184-3b7d-4dfb-93d9-ec60021be6f5.png)
 
 
     El Dispositvo virtual fue un Galaxy A10 y fue ejecutado en la granja de dispositivos de kobitton y este arrojo las siguientes evidencias
