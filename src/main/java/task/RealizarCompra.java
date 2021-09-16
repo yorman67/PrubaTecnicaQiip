@@ -9,7 +9,6 @@ import static userinterface.FormularioCompradorUI.BTN_CONTINUAR;
 
 public class RealizarCompra implements Task {
 
-
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(

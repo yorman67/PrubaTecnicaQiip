@@ -2,7 +2,6 @@ package questions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-
 import static userinterface.CompletarCompraUI.LBL_COMPRA_EXITOSA;
 
 public class Compra implements Question<Boolean> {

@@ -42,7 +42,7 @@ Característica:Verificar el funcionamiento del modulo de compras
     Entonces los productos se deberan organizar de la forma adecuada
 
   @manual
-  @manual-result:passed
+  @manual-result:compromised
   @manual-last-tested:sprint-15
   Escenario:compra cancelada
     Dado que el usuario ingreso los datos de la orden
@@ -50,7 +50,7 @@ Característica:Verificar el funcionamiento del modulo de compras
     Entonces aparece la pantalla de productos
 
   @manual
-  @manual-result:passed
+  @manual-result:compromised
   @manual-last-tested:sprint-15
   Escenario:descripcion del producto
     Dado el usuario se encuentra en la pagina de productos
