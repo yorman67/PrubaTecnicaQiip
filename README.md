@@ -75,7 +75,7 @@ Como pre-requisitos deberás tener instalados las siguientes herramientas:
 
 
     El Dispositvo virtual fue un Galaxy A10 y fue ejecutado en la granja de dispositivos de kobitton y este arrojo las siguientes evidencias
-    ![image](https://user-images.githubusercontent.com/79065617/133642621-a133f449-9895-4baa-aef6-e12e357b3924.png)
+   ![image](https://user-images.githubusercontent.com/79065617/133642621-a133f449-9895-4baa-aef6-e12e357b3924.png)
 
  ### Construido con 
   Este proyecto fue construido con:
