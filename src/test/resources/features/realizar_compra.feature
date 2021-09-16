@@ -10,9 +10,8 @@ Característica:Verificar el funcionamiento del modulo de compras
 
   Escenario:compra exitosa
     Dado que el usuario los productos
-      | productos                   |
-      | Sauce Labs Backpack         |
-      | Sauce Labs Bike Light       |
-      | Sauce Labs Fleece Jacket    |
+      | Sauce Labs Fleece Jacket          |
+      | Sauce Labs Onesie                 |
+      | Test.allTheThings() T-Shirt (Red) |
     Cuando el usuario completa la compra
     Entonces se observa una pantalla agradeciendo por la orden

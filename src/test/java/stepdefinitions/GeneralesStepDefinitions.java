@@ -26,5 +26,6 @@ public class GeneralesStepDefinitions {
     public void queElUsuarioEstaLogueadoEnLaApp(String actor) {
         OnStage.theActorCalled(actor).can(BrowseTheWeb.with(driver));
         OnStage.theActorInTheSpotlight().attemptsTo(Login.exitoso());
+        OnStage.theActorInTheSpotlight().remember("driver",driver);
     }
 }
