@@ -51,4 +51,11 @@ tasks.withType(Test){
     maxParallelForks = Runtime.runtime.availableProcessors()
 }
 
+test {
+    testLogging.showStandardStreams = true
+    testLogging.exceptionFormat = 'full'
+    systemProperties = System.properties
+    maxParallelForks = Runtime.runtime.availableProcessors() - 1
+}
+
 gradle.startParameter.continueOnFailure = true

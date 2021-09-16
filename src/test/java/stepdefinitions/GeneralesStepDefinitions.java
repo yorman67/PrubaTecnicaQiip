@@ -10,7 +10,10 @@ import task.Login;
 
 import java.net.MalformedURLException;
 
+
+import static util.Enums.EnumVariablesSesion.DRIVER_EN_EJECUCION;
 import static util.WebDriverFactory.getAppiumDriver;
+import static util.WebDriverFactory.kobitton;
 
 public class GeneralesStepDefinitions {
 
@@ -18,7 +21,11 @@ public class GeneralesStepDefinitions {
 
     @Before
     public void prepararEscenario() throws MalformedURLException {
-        driver = getAppiumDriver();
+        if(System.getenv().get("Denv").equals("kobitton")){
+            driver = kobitton();
+        }else{
+            driver = getAppiumDriver();
+        }
         OnStage.setTheStage(new OnlineCast());
     }
 
@@ -26,6 +33,6 @@ public class GeneralesStepDefinitions {
     public void queElUsuarioEstaLogueadoEnLaApp(String actor) {
         OnStage.theActorCalled(actor).can(BrowseTheWeb.with(driver));
         OnStage.theActorInTheSpotlight().attemptsTo(Login.exitoso());
-        OnStage.theActorInTheSpotlight().remember("driver",driver);
+        OnStage.theActorInTheSpotlight().remember(DRIVER_EN_EJECUCION.getValue(),driver);
     }
 }

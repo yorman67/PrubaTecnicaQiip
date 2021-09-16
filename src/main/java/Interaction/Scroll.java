@@ -11,6 +11,8 @@ import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 
+import static util.Enums.EnumVariablesSesion.DRIVER_EN_EJECUCION;
+
 public class Scroll implements Interaction {
 
  Target target;
@@ -21,7 +23,7 @@ public class Scroll implements Interaction {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        WebDriver driver = actor.recall("driver");
+        WebDriver driver = actor.recall(DRIVER_EN_EJECUCION.getValue());
         Dimension dimension = driver.manage().window().getSize();
         int xPosition = dimension.width / 2;
         int initialPositionY = dimension.height / 2;
