@@ -13,6 +13,7 @@ Como pre-requisitos deberás tener instalados las siguientes herramientas:
   6. Tener instalado Appium
   7. Tener instalado Android studio
   8. Si es posible tener un dispositvo android fisico
+  9. Apk https://github.com/saucelabs/sample-app-mobile/releases
 
 ## Instalación
   1. Abre una ventana de comandos
