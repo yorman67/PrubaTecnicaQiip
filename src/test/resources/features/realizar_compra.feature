@@ -14,4 +14,4 @@ Característica:Verificar el funcionamiento del modulo de compras
       | Sauce Labs Onesie                 |
       | Test.allTheThings() T-Shirt (Red) |
     Cuando el usuario completa la compra
-    Entonces se observa una pantalla agradeciendo por la orden
+    Entonces se observa una pantalla con el mensaje "CHECKOUT: COMPLETE!"

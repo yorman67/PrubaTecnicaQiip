@@ -1,32 +1,38 @@
 package stepdefinitions;
 
+import Interaction.Presionar;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.actors.OnStage;
+import net.serenitybdd.screenplay.ensure.Ensure;
 import task.AgregarProductos;
 import task.DiligenciarInformacion;
-import task.ObservarArticulos;
+import task.FinalizarCompra;
 
 import java.util.List;
+
+import static userinterface.CompletarCompraUI.LBL_COMPRA_EXITOSA;
+import static userinterface.FormularioCompradorUI.BTN_CONTINUAR;
+import static userinterface.ProductosUI.BTN_CARRITO;
 
 public class RealizarCompraStepDefinition {
 
     @Dado("que el usuario los productos")
     public void queElUsuarioLosProductos(List<String> productos) {
         OnStage.theActorInTheSpotlight().attemptsTo(AgregarProductos.alCarrito(productos));
-        OnStage.theActorInTheSpotlight().attemptsTo(ObservarArticulos.delCarrito());
+        OnStage.theActorInTheSpotlight().attemptsTo(Presionar.elElemento(BTN_CARRITO));
     }
 
     @Cuando("el usuario completa la compra")
     public void elUsuarioCompletaLaCompra() {
        OnStage.theActorInTheSpotlight().attemptsTo(DiligenciarInformacion.delComprador());
+       OnStage.theActorInTheSpotlight().attemptsTo(Presionar.elElemento(BTN_CONTINUAR));
+       OnStage.theActorInTheSpotlight().attemptsTo(FinalizarCompra.exitosa());
     }
 
-    @Entonces("se observa una pantalla agradeciendo por la orden")
-    public void seObservaUnaPantallaAgradeciendoPorLaOrden() {
-
+    @Entonces("se observa una pantalla con el mensaje {string}")
+    public void seObservaUnaPantallaConElMensaje(String mensaje) {
+        OnStage.withCurrentActor((Ensure.that(LBL_COMPRA_EXITOSA).text().contains(mensaje)));
     }
-
-
 }

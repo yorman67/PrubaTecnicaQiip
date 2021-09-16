@@ -23,8 +23,7 @@ public class DiligenciarInformacion implements Task {
                 Click.on(BTN_VERIFICAR),
                 Enter.theValue(data.generarNombre()).into(INPUT_NOMBRE),
                 Enter.theValue(data.generarApellido()).into(INPUT_APELLIDO),
-                SendKeys.of(data.generarCodigoPostal()).into(INPUT_CODIGO_POSTAL),
-                Click.on(BTN_CONTINUAR)
+                SendKeys.of(data.generarCodigoPostal()).into(INPUT_CODIGO_POSTAL)
         );
     }
 

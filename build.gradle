@@ -38,6 +38,7 @@ dependencies {
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: "$rootProject.ext.serenityVersion"
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-rest', version: "$rootProject.ext.serenityVersion"
     implementation 'io.appium:java-client:7.5.1'
+    implementation "net.serenity-bdd:serenity-ensure:$rootProject.ext.serenityVersion"
 
     implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
     testImplementation 'junit:junit:4.13.2'
