@@ -21,7 +21,7 @@ public class GeneralesStepDefinitions {
 
     @Before
     public void prepararEscenario() throws MalformedURLException {
-        if(System.getenv().get("Denv").equals("kobitton")){
+        if(System.getProperty("env").equals("kobitton")){
             driver = kobitton();
         }else{
             driver = getAppiumDriver();
