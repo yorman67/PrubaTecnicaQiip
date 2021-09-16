@@ -29,7 +29,6 @@ public class WebDriverFactory {
     }
 
     public static WebDriver kobitton() throws MalformedURLException {
-
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability(SESION_NAME.getValue(), VALOR_SESION_NAME.getValue());

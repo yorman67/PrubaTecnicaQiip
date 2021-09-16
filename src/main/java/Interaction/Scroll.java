@@ -15,7 +15,7 @@ import static util.Enums.EnumVariablesSesion.DRIVER_EN_EJECUCION;
 
 public class Scroll implements Interaction {
 
- Target target;
+    private Target target;
 
     public Scroll(Target target) {
         this.target = target;

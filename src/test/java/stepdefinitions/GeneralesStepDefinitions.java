@@ -10,7 +10,6 @@ import task.Login;
 
 import java.net.MalformedURLException;
 
-
 import static util.Enums.EnumVariablesSesion.DRIVER_EN_EJECUCION;
 import static util.WebDriverFactory.getAppiumDriver;
 import static util.WebDriverFactory.kobitton;

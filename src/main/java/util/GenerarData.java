@@ -2,7 +2,6 @@ package util;
 
 import com.github.javafaker.Faker;
 
-
 public class GenerarData {
 
     private  final Faker faker = new Faker();
