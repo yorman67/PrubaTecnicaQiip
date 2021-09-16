@@ -9,7 +9,7 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class Presionar implements Interaction {
 
-    Target target;
+    private Target target;
 
     public Presionar(Target target) {
         this.target = target;
