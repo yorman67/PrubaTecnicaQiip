@@ -1,4 +1,4 @@
-# PrubaTecnicaQiip
+# PruebaTecnicaQiip
 
 ## Comenzando
 Estas instrucciones te permitirán clonar el proyecto y realizar la configuración adecuada para que tengas el proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
@@ -6,25 +6,17 @@ Estas instrucciones te permitirán clonar el proyecto y realizar la configuraci�
 ### Pre-Requisitos
 Como pre-requisitos deberás tener instalados las siguientes herramientas:
   1. Git
-  2. Java
-  3. Gradle 6.8.3
-  4. Intellij o el IDE que prefieras
-  5. Tener instalado el plugin de cucumber en el IDE
-  6. Tener instalado Appium
-  7. Tener instalado Android studio
-  8. Si es posible tener un dispositvo android fisico
+  2. JDK 1.8.0
+  3. Gradle 6.9.1
+  6. Appium 1.21.0
+  7. SDK
+  8. contar con acceso a un dispositivo android
   9. Apk https://github.com/saucelabs/sample-app-mobile/releases
 
-## Instalación
-  1. Abre una ventana de comandos
-  2. Ejecuta el comando java -version
-  3. Ejecuta el comando gradle -version
-   ![image](https://user-images.githubusercontent.com/79065617/113531447-6c4fdd00-958e-11eb-90d6-e5c80d955b06.png)
-  4. Clona el respositorio
+## Clonacion Proyecto
     Git:
-       - git clone https://github.com/yorman67/PrubaTecnicaQiip.git
+       - git clone https://github.com/yorman67/PruebaTecnicaQiip.git
        - cd PrubaTecnicaQiip
-   6. Espera que todas las dependencias necesarias se descarguen
       
 ## Ejecución de pruebas
   En la carpeta  runners encontrarás el runner especifico de cada uno de los escenarios.
@@ -38,8 +30,7 @@ Como pre-requisitos deberás tener instalados las siguientes herramientas:
         - si lo quieres correr en un dispositivo fisico usa esta variable Denv=Local
      5.Selecciona la opcion JAR en la seccion de shorten command
      6.Selecciona aplicar
-     7.Selecciona aplicar
-     8.Ejecuta la prueba
+     7.Ejecuta la prueba
      
   ![image](https://user-images.githubusercontent.com/79065617/133647185-18a356c7-8e28-4133-9dd6-2a51eb66744c.png)
 
@@ -70,8 +61,9 @@ Como pre-requisitos deberás tener instalados las siguientes herramientas:
     Estas pruebas se realizaron en dos dispositvos diferentes uno fisico y uno virtual
     
     El dispositivo fisico utlizado fue un MotoG30 y arrojo las siguientes evidencias
-   ![image](https://user-images.githubusercontent.com/79065617/133642187-6edfe2bd-a7ff-4d8c-9a32-52ee350c5f4a.png)
-   ![image](https://user-images.githubusercontent.com/79065617/133642267-225a5184-3b7d-4dfb-93d9-ec60021be6f5.png)
+   ![image](https://user-images.githubusercontent.com/79065617/133696911-67a5daa3-b384-428c-9047-ca68734aec9b.png)
+   ![image](https://user-images.githubusercontent.com/79065617/133696948-34e39be1-1cd3-4287-9911-c2939e5119fa.png)
+   ![image](https://user-images.githubusercontent.com/79065617/133696990-e95ddb15-4e92-4d6f-bcd0-f6ed46ac9a93.png)
 
 
     El Dispositvo virtual fue un Galaxy A10 y fue ejecutado en la granja de dispositivos de kobitton y este arrojo las siguientes evidencias
@@ -91,7 +83,7 @@ Como pre-requisitos deberás tener instalados las siguientes herramientas:
   - Yorman Paúl Martínez Acevedo   
 
 ### Agradecimiento
-  Quiero dar las gracias a Qiip por permitirme participar en su proceso de selección, con este ejercicio tuve la oportunidad de practicar y mejorar mis habilidades y espero poder tener una retroalimentación por parte de esta gran compañía, nuevamente muchas gracias.
+  Quiero dar las gracias a qiip por permitirme participar en su proceso de selección, con este ejercicio tuve la oportunidad de practicar y mejorar mis habilidades y espero poder tener una retroalimentación por parte de esta gran compañía, nuevamente muchas gracias.
 
 
     
